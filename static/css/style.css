@@ -1,0 +1,40 @@
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.nav-link.active div {
+    /* background: white; */
+    border-radius: 10px;
+}
+
+.nav-link.active svg path,
+.nav-link.active svg {
+    fill: #8b5cf6 !important;
+    stroke: #6d32f5 !important;
+}
+
+.nav-link svg path,
+.nav-link svg {
+    transition: 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+}

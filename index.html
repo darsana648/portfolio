@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./static/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- VANTA JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            lato: ['Lato', 'sans-serif'],
+            roboto: ['Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+
+</head>
+
+<body id="vanta-bg" class="text-white overflow-hidden">
+
+  <div class="flex h-screen">
+
+    <!-- LEFT PROFILE CARD -->
+    <div
+      class="fixed left-10 top-0 h-full w-[320px] bg-transparent rounded-lg border-[1px] border-white/30 backdrop-blur-md p-6 ">
+
+      <img src="./static/images/p1.png" class="rounded-xl mb-6 bg-black">
+
+      <h2 class="text-2xl font-inter font-semibold text-white">Darsana Rajesh</h2>
+
+      <p class="text-gray-300 mt-2">
+        Python Full Stack Developer
+      </p>
+
+      <div class="flex gap-4 mt-6">
+        <!-- LinkedIn Icon -->
+        <div class="border border-white/40 p-2 rounded-lg hover:bg-white/10 transition">
+          <a href="https://www.linkedin.com/in/darsana-rajesh-b2a805288/" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- GitHub Icon -->
+        <div class="border border-white/40 p-2 rounded-lg hover:bg-white/10 transition">
+          <a href="https://github.com/darsana648" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M12.001 2c-5.525 0-10 4.475-10 10a9.99 9.99 0 0 0 6.837 9.488c.5.087.688-.213.688-.476c0-.237-.013-1.024-.013-1.862c-2.512.463-3.162-.612-3.362-1.175c-.113-.288-.6-1.175-1.025-1.413c-.35-.187-.85-.65-.013-.662c.788-.013 1.35.725 1.538 1.025c.9 1.512 2.337 1.087 2.912.825c.088-.65.35-1.087.638-1.337c-2.225-.25-4.55-1.113-4.55-4.938c0-1.088.387-1.987 1.025-2.687c-.1-.25-.45-1.275.1-2.65c0 0 .837-.263 2.75 1.024a9.3 9.3 0 0 1 2.5-.337c.85 0 1.7.112 2.5.337c1.913-1.3 2.75-1.024 2.75-1.024c.55 1.375.2 2.4.1 2.65c.637.7 1.025 1.587 1.025 2.687c0 3.838-2.337 4.688-4.562 4.938c.362.312.675.912.675 1.85c0 1.337-.013 2.412-.013 2.75c0 .262.188.574.688.474A10.02 10.02 0 0 0 22 12c0-5.525-4.475-10-10-10" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <p class="mt-20 border-b border-white/40 pb-2 text-gray-300">
+        darsanarajesh648@gmail.com
+      </p>
+
+    </div>
+
+
+    <!-- MIDDLE SCROLLABLE CONTENT -->
+    <div class="ml-[360px] w-[70%] overflow-y-auto h-screen px-20 py-24 no-scrollbar">
+
+      <p id="home" class="bg-transparent border border-white/30 inline-block px-4 py-1 rounded-full mb-6">
+        HELLO
+      </p>
+
+      <h1 class="text-[5.5rem] font-lato leading-tight font-medium">
+        Transforming Ideas into Intelligent <br>
+        <span class="bg-gradient-to-r from-violet-700 to-rose-500 bg-clip-text text-transparent">
+          Web Solutions
+        </span>
+      </h1>
+
+      <p class="text-gray-300 font-roboto text-lg mt-6 max-w-3xl">
+        Python Full-Stack Developer creating scalable web apps, APIs and AI-powered solutions.
+      </p>
+
+      <div class="flex gap-6 mt-10">
+        <a href="#contact">
+          <button class="bg-gradient-to-r from-violet-700  to-rose-600 px-6 py-3 rounded-full">
+            Let's Work Together
+          </button>
+        </a>
+
+        <a href="./static/files/python full stack.pdf" download>
+          <button class="border border-gray-500 px-6 py-3 rounded-full 
+                 hover:bg-white hover:text-black font-medium
+                 transition duration-300 ease-in-out">
+            Download CV →
+          </button>
+        </a>
+      </div>
+
+      <!-- ABOUT -->
+      <section id="about" class="mt-40">
+
+        <p class="bg-transparent border border-white/30 inline-block px-4 py-1 rounded-full mb-6">
+          ABOUT
+        </p>
+
+        <h2 class="text-[4rem] font-lato leading-tight mb-8">
+          My Journey &
+          <span class="bg-gradient-to-r from-violet-700 to-rose-500 bg-clip-text text-transparent">
+            Vision
+          </span>
+        </h2>
+
+        <p class="text-gray-300 font-roboto text-lg leading-relaxed mb-8 max-w-3xl">
+          Detail-oriented and results-driven <span class="text-white font-semibold">Python Full Stack Developer</span>
+          with over a year of hands-on experience building and maintaining dynamic web applications.
+          Focused on creating scalable, efficient, and user-friendly solutions that meet real-world needs.
+        </p>
+
+        <p class="text-gray-300 font-roboto text-lg leading-relaxed max-w-3xl">
+          Experienced in developing end-to-end applications, from designing robust backend systems
+          to delivering seamless user experiences. Passionate about clean code, continuous learning,
+          and building high-quality solutions that make an impact.
+        </p>
+
+      </section>
+
+
+      <section id="experience" class="mt-40">
+
+        <p class="bg-transparent border border-white/30 inline-block px-4 py-1 rounded-full mb-6">
+          EXPERIENCE
+        </p>
+
+        <h2 class="text-[4rem] font-lato leading-tight mb-16">
+          Professional
+          <span class="bg-gradient-to-r from-violet-700 to-rose-500 bg-clip-text text-transparent">
+            Experience
+          </span>
+        </h2>
+
+        <div class="space-y-10 text-gray-300">
+
+          <div class="flex justify-between border-b border-white/20 pb-6">
+            <span>Associate Web Developer</span>
+            <span>Cybexel Technologies Pvt. Ltd</span>
+            <span>Nov 2024 – Present</span>
+          </div>
+
+          <div class="flex justify-between border-b border-white/20 pb-6">
+            <span>Python Full Stack Developer (Intern)</span>
+            <span>SMEC Labs, Kochi</span>
+            <span>May 2024 – Nov 2024</span>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="mt-40">
+
+        <p class="bg-transparent border border-white/30 inline-block px-4 py-1 rounded-full mb-6">
+          SKILLS
+        </p>
+
+        <h2 class="text-[4rem] font-lato leading-tight mb-16">
+          My
+          <span class="bg-gradient-to-r from-violet-700 to-rose-500 bg-clip-text text-transparent">
+            Superpowers
+          </span>
+        </h2>
+
+        <div class="grid grid-cols-4 gap-10">
+
+          <!-- Python -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              class="w-10 mx-auto mb-3">
+            <p class="text-xl font-semibold">Python</p>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              class="w-10 mx-auto mb-3">
+            <p class="text-xl font-semibold">JavaScript</p>
+          </div>
+
+
+
+          <!-- Django -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 32 32" class="mx-auto mb-3">
+              <path fill="#43a047"
+                d="M22 2h4v4h-4zm0 8v12.13A3.88 3.88 0 0 1 18.13 26H18v4h.13A7.866 7.866 0 0 0 26 22.13V10Zm-8-8h4v20h-4z" />
+              <path fill="#43a047"
+                d="M11.838 12A2.165 2.165 0 0 1 14 14.162v4.955l-.77.257a5.03 5.03 0 0 1-2.812.108A3.19 3.19 0 0 1 8 16.384v-.547A3.84 3.84 0 0 1 11.838 12m0-4A7.84 7.84 0 0 0 4 15.837v.547a7.19 7.19 0 0 0 5.448 6.978a9.03 9.03 0 0 0 5.047-.194L18 22v-7.838A6.16 6.16 0 0 0 11.838 8" />
+            </svg>
+
+            <p class="text-xl font-semibold">Django</p>
+
+          </div>
+
+          <div
+            class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center flex flex-col items-center justify-center">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 128 128">
+              <path fill="#7c1010"
+                d="M12.061 28.416a.14.14 0 0 0-.125.139v2.744q0 .22.027.56c.008.096.014.15.022.229c-.11-.125-.208-.257-.344-.361q-.33-.26-.777-.41a3.3 3.3 0 0 0-1.041-.151c-.933 0-1.703.32-2.272.953c-.573.634-.85 1.561-.85 2.762c0 1.188.27 2.105.83 2.73c.561.621 1.331.934 2.272.934q.601 0 1.055-.15h.002q.452-.158.783-.424c.153-.122.264-.267.38-.409l.126.743a.14.14 0 0 0 .137.115h.879a.14.14 0 0 0 .138-.139v-9.726a.14.14 0 0 0-.138-.14H12.06m4.129.313a.84.84 0 0 0-.565.203c-.16.14-.232.36-.232.617c0 .254.073.47.23.615c.153.135.35.205.567.205c.208 0 .4-.07.55-.203c.167-.143.245-.362.245-.617c0-.259-.078-.48-.246-.62a.82.82 0 0 0-.55-.2m21.768 2.296q-.89-.002-1.533.288c-.43.193-.765.48-.994.853c-.23.371-.342.818-.342 1.33c0 .486.121.921.369 1.295l.002.002c.203.297.472.508.775.668c-.215.144-.4.294-.527.457a1.2 1.2 0 0 0-.246.742c0 .245.077.47.226.66l.002.002q.121.145.266.252c-.384.12-.723.288-.969.547a1.7 1.7 0 0 0-.465 1.195c0 .644.288 1.168.832 1.522v.002c.545.359 1.302.527 2.264.527c1.241 0 2.203-.202 2.885-.627s1.037-1.063 1.037-1.861c0-.632-.231-1.143-.686-1.48h-.002c-.449-.338-1.08-.497-1.882-.497H37.7a3 3 0 0 1-.555-.047a.7.7 0 0 1-.308-.142c-.054-.052-.08-.113-.08-.217a.6.6 0 0 1 .133-.387a1.5 1.5 0 0 1 .423-.32c.196.028.39.047.578.047c.872 0 1.576-.208 2.092-.633c.516-.429.78-1.022.78-1.738q0-.442-.141-.813c-.062-.163-.153-.29-.238-.423l1.123-.133a.14.14 0 0 0 .123-.137v-.67a.14.14 0 0 0-.139-.139h-2.457a3 3 0 0 0-.299-.06a4 4 0 0 0-.388-.045a4 4 0 0 0-.39-.02zm-15.918.026a5.2 5.2 0 0 0-1.361.174a6.3 6.3 0 0 0-1.143.416a.14.14 0 0 0-.066.177l.334.79a.14.14 0 0 0 .187.07q.45-.21.953-.362q.492-.15 1.037-.15c.464 0 .802.11 1.037.32c.225.2.354.57.354 1.14v.286l-1.107.045c-1.178.034-2.067.234-2.67.623c-.603.388-.918.97-.918 1.691c0 .474.102.878.312 1.202v.002c.212.317.502.557.861.713h.002q.543.23 1.223.23q.637.001 1.09-.13h.002q.455-.14.805-.405l.002-.002a4 4 0 0 0 .503-.504l.168.805a.14.14 0 0 0 .135.111h.795a.14.14 0 0 0 .139-.139v-4.658c0-.828-.216-1.461-.67-1.861c-.452-.398-1.126-.584-2.004-.584m8.375.115a3.4 3.4 0 0 0-.965.137a2.8 2.8 0 0 0-.836.394c-.181.125-.333.28-.469.45l-.123-.739a.14.14 0 0 0-.136-.117h-.881a.14.14 0 0 0-.139.139v6.851a.14.14 0 0 0 .139.139h1.092a.14.14 0 0 0 .138-.139v-3.588c0-.798.159-1.39.457-1.785c.291-.385.799-.59 1.57-.59c.542 0 .917.135 1.155.383h.002c.243.25.373.637.373 1.186v4.394a.14.14 0 0 0 .14.139h1.077a.14.14 0 0 0 .138-.139v-4.463c0-.902-.225-1.585-.7-2.015c-.472-.43-1.157-.637-2.032-.637m15.529.014c-.706 0-1.325.143-1.848.435a2.9 2.9 0 0 0-1.199 1.266c-.28.549-.416 1.208-.416 1.974q-.001.865.244 1.555q.252.687.707 1.168q.461.478 1.086.733h.002q.63.248 1.377.248q.797 0 1.438-.248a3 3 0 0 0 1.1-.733q.456-.481.694-1.17t.237-1.552q.002-1.147-.43-1.971a3 3 0 0 0-1.203-1.27q-.773-.436-1.79-.435m-30.326.111a.14.14 0 0 0-.125.139v7.959c0 .396-.09.636-.229.756c-.155.134-.357.205-.63.205q-.255 0-.45-.036l-.004-.001a3 3 0 0 1-.392-.088a.14.14 0 0 0-.18.132v.844a.14.14 0 0 0 .094.131q.196.067.453.111q.266.053.61.053c.462 0 .854-.08 1.17-.254c.312-.171.55-.425.702-.75v-.002q.225-.477.223-1.127V31.43a.14.14 0 0 0-.139-.139h-1.103m22.3.781c.499 0 .852.12 1.087.348l.002.002c.233.222.357.56.357 1.049c0 .454-.12.774-.351.994c-.23.218-.582.336-1.08.336c-.481 0-.829-.117-1.069-.338s-.363-.533-.363-.973c0-.484.124-.827.36-1.058c.24-.237.583-.36 1.058-.36m-27.944.235c.774 0 1.267.217 1.539.636c.285.434.437 1.077.437 1.932v.187c0 .803-.158 1.39-.45 1.772c-.287.374-.78.57-1.526.57c-.643 0-1.092-.207-1.398-.629c-.305-.425-.467-1.045-.467-1.869c0-.828.165-1.465.476-1.922v-.002c.309-.456.753-.675 1.389-.675m35.943.025c.488 0 .873.103 1.164.3c.295.201.513.482.658.86v.002q.22.563.22 1.361q-.002.807-.222 1.383c-.144.382-.362.669-.662.873h-.002c-.292.202-.67.307-1.148.307c-.483 0-.865-.105-1.156-.307c-.296-.204-.514-.49-.659-.873q-.219-.576-.22-1.383c0-.813.168-1.433.49-1.873l.002-.001c.322-.433.816-.649 1.535-.649m-22.557 2.59v.486c0 .647-.188 1.104-.56 1.412c-.38.315-.868.475-1.483.475c-.39 0-.688-.087-.908-.252c-.213-.16-.319-.396-.319-.758c0-.412.155-.705.49-.93c.327-.218.941-.361 1.827-.394zm13.988 3.226h1.248q.542 0 .904.073h.004c.234.042.394.124.5.234c.1.109.16.277.16.53a.93.93 0 0 1-.258.667l-.001.004c-.17.19-.44.344-.817.451v.002q-.558.168-1.44.168c-.593 0-1.037-.097-1.333-.273v-.002c-.295-.172-.424-.393-.424-.723q.001-.384.166-.623c.115-.163.274-.285.494-.373q.33-.133.797-.135m43.719 6.963q-.15 0-.297.002c-1.515.024-4.762.018-7.67 1.334c-2.907 1.316-5.463 4.042-5.463 9.246c0 2.2.735 4.102 1.887 5.73H46.313v-10.51H61.55v-5.35H40.186v5.35h.002v10.512h-.002v5.352h.002V79.23l-3.58-.022l-4.955.023l-7.754-12.047c1.817-.75 3.595-1.829 4.965-3.34c1.489-1.643 2.486-3.79 2.486-6.447v-.763c0-3.888-1.48-6.675-3.899-8.453c-2.417-1.778-5.726-2.565-9.402-2.649H6.25v5.412h.03v12.707h-.03v5.051h.03v15.855h6.127v-15.87l6.16-.018l8.457 13.76l.011.015c.717.949 2.206 3.056 4.612 4.572l.203.127l4.861-2.562l3.895-.024h20.943v-5.56H46.313V66.775h30.129l.031.014c1.866.853 4.133 1.625 5.896 2.738c1.764 1.112 2.997 2.49 2.997 4.676c0 2.353-1.062 3.586-2.559 4.334s-3.454.933-5.065.933h-.002c-3.087.02-6.717-1.292-9.818-2.328l-.549-.183v5.882l.244.112c3.044 1.387 7.552 1.93 10.135 1.832c1.854-.001 5.237-.364 8.225-1.86c2.992-1.497 5.584-4.21 5.584-8.722c0-3.492-1.313-5.996-3.152-7.787c-1.84-1.792-4.183-2.892-6.276-3.707h-.002c-.793-.307-2.298-.908-3.795-1.723c-1.494-.814-2.972-1.853-3.71-2.944c-.46-.746-.744-1.576-.793-2.36c.004-2.38 1.114-3.664 2.55-4.42c1.44-.76 3.23-.921 4.4-.837c2.356.17 6.414 1.5 7.712 2.055l.414.176l.601-1.766h16.242v33.668h6.127V50.89h11.01v-5.303h-11.01v-.023h-6.127v.023H84.586c-1.175-.283-2.358-.466-3.52-.476zm-.283.834h.275c1.1.01 2.242.182 3.39.463l.05.012h22.088v-.023h4.459v.023h11.012v3.639h-11.012v33.666h-4.46V50.059h-17.67l-.51 1.496c-1.638-.65-5.155-1.786-7.559-1.96c-1.3-.093-3.207.063-4.85.928c-1.642.866-2.996 2.51-2.996 5.17v.014l.002.012c.058.953.393 1.915.922 2.771l.004.006l.004.008c.883 1.307 2.457 2.37 4.008 3.215s3.088 1.457 3.893 1.767c2.05.8 4.29 1.863 5.996 3.526s2.902 3.905 2.902 7.191c0 4.2-2.313 6.57-5.125 7.977s-6.122 1.771-7.861 1.771h-.016c-2.357.091-6.681-.44-9.522-1.658v-4.176c2.97 1.002 6.408 2.205 9.541 2.186c1.67 0 3.732-.17 5.434-1.02s3.02-2.46 3.02-5.08c0-2.51-1.5-4.19-3.387-5.38s-4.187-1.966-5.992-2.792l-.112-.05l-.082-.04H45.48v13.89h15.236v3.894H40.602l-4.1.025l-4.605 2.428c-2.117-1.397-3.468-3.269-4.185-4.219l-8.68-14.123l-7.459.022v15.867H7.114V67.87h-.031v-3.385h.031V50.11h-.031v-3.744h10.949c3.568.081 6.707.853 8.926 2.484c2.218 1.632 3.56 4.103 3.56 7.783v.764c0 2.45-.898 4.374-2.271 5.889s-3.231 2.61-5.12 3.324l-.48.182c2.863 4.417 5.704 8.849 8.553 13.275l5.406-.026l4.414.026V65.94h-.002v-3.684h.002V50.079h-.002v-3.686h19.7v3.686h-15.24v12.178h25.727l-.558-.682c-1.35-1.643-2.178-3.578-2.178-5.882c0-4.94 2.282-7.27 4.974-8.489c2.693-1.218 5.809-1.235 7.34-1.26zm-69.211 4.166v14.376h5.056c2.127 0 4.362-.313 6.114-1.368s2.972-2.901 2.972-5.72v-.764c0-2.855-1.603-4.554-3.336-5.451c-1.732-.898-3.576-1.073-4.337-1.073zm.834.834h5.634c.62 0 2.404.175 3.956.979c1.55.804 2.886 2.158 2.886 4.71v.764c0 2.589-1.029 4.078-2.57 5.006s-3.642 1.248-5.684 1.248h-4.222zm43.06 38.566c-.506 0-.945.087-1.31.27a1.87 1.87 0 0 0-.844.863c-.192.385-.283.872-.283 1.461v.352l-1.172.316a.14.14 0 0 0-.101.133v.5a.14.14 0 0 0 .138.138h1.135v5.9a.14.14 0 0 0 .139.14h1.09a.14.14 0 0 0 .138-.14v-5.9h1.655a.14.14 0 0 0 .138-.138v-.813a.14.14 0 0 0-.138-.138h-1.655v-.362c0-.529.1-.899.268-1.115c.173-.221.43-.334.816-.334q.274 0 .534.059l.003.002q.278.055.493.12a.14.14 0 0 0 .172-.087l.283-.818a.14.14 0 0 0-.088-.178a5 5 0 0 0-.627-.16a4 4 0 0 0-.783-.07m61.095.069a.14.14 0 0 0-.125.138v9.727a.14.14 0 0 0 .138.139h1.084a.14.14 0 0 0 .139-.14v-2.417l.715-.625l2.451 3.129a.14.14 0 0 0 .11.053h1.314a.139.139 0 0 0 .11-.225l-3.032-3.83l2.81-2.838a.139.139 0 0 0-.099-.236h-1.281a.14.14 0 0 0-.098.04l-2.39 2.426l-.002.002q-.189.2-.46.52h-.001l-.182.219l.014-.272v-.002q.02-.363.021-.619v-5.05a.14.14 0 0 0-.138-.14zM86.658 92.2c-.665 0-1.253.154-1.754.46a3.1 3.1 0 0 0-1.156 1.308c-.27.56-.4 1.22-.4 1.973c0 .772.144 1.435.443 1.98a3 3 0 0 0 1.252 1.245h.002q.81.417 1.877.416q.737 0 1.287-.11q.554-.11 1.11-.345a.14.14 0 0 0 .085-.13v-.911a.14.14 0 0 0-.192-.13q-.555.228-1.068.344q-.507.116-1.178.116c-.713 0-1.243-.2-1.62-.59c-.353-.365-.546-.896-.58-1.602h4.821a.14.14 0 0 0 .14-.138v-.645q.001-.959-.364-1.687a2.7 2.7 0 0 0-1.059-1.145c-.462-.273-1.014-.406-1.646-.406zm18.799 0q-1.062 0-1.848.438a2.9 2.9 0 0 0-1.2 1.266q-.416.824-.415 1.974q0 .865.246 1.555q.251.686.705 1.166l.002.002q.46.477 1.084.733h.002q.632.248 1.379.248q.796 0 1.435-.248q.645-.256 1.102-.735q.455-.48.693-1.168q.239-.689.238-1.553c0-.763-.14-1.421-.43-1.97a3 3 0 0 0-1.204-1.27q-.773-.437-1.79-.435zm-39.098.014a5.2 5.2 0 0 0-1.362.174a6.3 6.3 0 0 0-1.142.416a.14.14 0 0 0-.067.178l.336.79a.14.14 0 0 0 .186.07q.45-.21.953-.362q.492-.15 1.037-.15c.463 0 .801.11 1.037.32c.224.2.356.57.356 1.14v.286l-1.11.045c-1.177.034-2.066.234-2.67.623c-.602.388-.918.97-.918 1.691c0 .474.103.878.313 1.201v.002c.211.318.502.558.861.713h.002q.543.23 1.223.23q.637.001 1.09-.13h.002q.454-.138.804-.405l.002-.001c.177-.138.34-.32.504-.504l.168.804a.14.14 0 0 0 .135.112h.795a.14.14 0 0 0 .138-.139V94.66c0-.829-.216-1.462-.67-1.862c-.45-.398-1.125-.584-2.003-.584m-5.162.116a2.4 2.4 0 0 0-.989.199q-.435.198-.77.535c-.146.145-.258.317-.376.484l-.09-.966a.14.14 0 0 0-.139-.127h-.906a.14.14 0 0 0-.139.138v6.852a.14.14 0 0 0 .14.139h1.095a.14.14 0 0 0 .138-.139v-3.676q.001-.508.157-.912v-.002q.154-.414.424-.697l.001-.002q.269-.29.622-.442h.002a1.9 1.9 0 0 1 .765-.156a3.4 3.4 0 0 1 .768.09a.14.14 0 0 0 .17-.115l.138-.963a.14.14 0 0 0-.11-.156a4 4 0 0 0-.437-.059a5 5 0 0 0-.464-.025m13.273 0q-.48 0-.909.13a2.6 2.6 0 0 0-.777.391a2.2 2.2 0 0 0-.428.434l-.12-.715a.14.14 0 0 0-.137-.115h-.881a.14.14 0 0 0-.139.138v6.852a.14.14 0 0 0 .139.139h1.09a.14.14 0 0 0 .138-.14V95.82q.002-.79.184-1.31v-.003c.123-.347.312-.595.574-.765c.26-.169.615-.26 1.074-.26c.32 0 .574.06.766.17l.002.002c.197.107.34.263.44.484v.002q.155.332.157.867v4.438a.14.14 0 0 0 .139.139h1.084a.14.14 0 0 0 .139-.139v-3.832c0-.726.154-1.256.441-1.606c.283-.344.74-.525 1.41-.525c.469 0 .793.128 1.012.373l.002.002c.222.241.346.617.346 1.15v4.438a.14.14 0 0 0 .138.139h1.077a.14.14 0 0 0 .138-.139v-4.488c0-.892-.205-1.567-.644-1.994h-.002c-.436-.428-1.073-.633-1.889-.633q-.764 0-1.412.306h-.002a2.3 2.3 0 0 0-.932.815c-.18-.347-.434-.633-.783-.813q-.59-.31-1.435-.308m39.352 0q-.54-.001-.99.199q-.436.198-.77.535c-.147.145-.257.318-.375.484l-.092-.966a.14.14 0 0 0-.139-.127h-.906a.14.14 0 0 0-.139.138v6.852a.14.14 0 0 0 .14.139h1.097a.14.14 0 0 0 .138-.139v-3.676q0-.508.155-.912v-.002q.155-.414.425-.697v-.002q.27-.29.624-.442a1.9 1.9 0 0 1 .765-.156a3.4 3.4 0 0 1 .768.09a.14.14 0 0 0 .172-.115l.138-.963a.14.14 0 0 0-.111-.156a4 4 0 0 0-.436-.059h-.002a4 4 0 0 0-.462-.025m-22.947.125a.14.14 0 0 0-.133.177l1.984 6.852a.14.14 0 0 0 .133.1h1.228a.14.14 0 0 0 .131-.094l1.34-3.967v-.002a9 9 0 0 0 .166-.514q.072-.255.133-.488v-.004c.03-.104.052-.194.076-.287c.025.093.048.182.074.287l.002.006l.139.475V95l.166.502l1.28 3.986a.14.14 0 0 0 .132.096h1.268a.14.14 0 0 0 .133-.1l1.99-6.852a.14.14 0 0 0-.133-.177h-1.111a.14.14 0 0 0-.133.101l-1.051 3.783q-.106.39-.205.764v.002q-.089.363-.158.668a16 16 0 0 0-.178-.629v-.002a16 16 0 0 0-.191-.627v-.002l-1.282-3.963a.14.14 0 0 0-.13-.095h-1.176a.14.14 0 0 0-.133.095l-1.326 3.97a17 17 0 0 0-.285.973l-.079.321l-.007-.037a11 11 0 0 0-.164-.691v-.002a27 27 0 0 0-.198-.745l-1.039-3.783a.14.14 0 0 0-.133-.101zm-4.23.875c.391 0 .7.083.935.24c.239.155.415.37.533.66v.004a2.6 2.6 0 0 1 .18.88h-3.485c.08-.544.254-.98.545-1.284c.32-.335.738-.5 1.291-.5m18.786.025c.488 0 .87.103 1.162.3c.295.201.514.482.658.86v.002q.22.563.221 1.361q-.001.807-.22 1.383a1.77 1.77 0 0 1-.665.871l-.002.002c-.291.202-.67.307-1.148.307c-.483 0-.865-.105-1.156-.307a1.78 1.78 0 0 1-.658-.873q-.22-.576-.221-1.383c0-.813.17-1.433.492-1.873v-.001c.322-.433.818-.649 1.537-.649m-37.752 2.73v.487c0 .647-.188 1.103-.56 1.412c-.38.315-.868.475-1.483.475c-.39 0-.686-.087-.906-.252c-.213-.16-.32-.396-.32-.758c0-.412.155-.706.49-.93c.327-.218.94-.361 1.826-.394z"
+                stroke-width="2.4" stroke="#7c1010" />
+            </svg>
+
+            <p class="text-xl font-semibold">Django REST Framework</p>
+
+          </div>
+
+
+          <!-- REST API -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png" class="w-10 mx-auto mb-3">
+            <p class="text-xl font-semibold">RESTful APIs</p>
+          </div>
+
+
+          <!-- Flask -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+              class="w-10 mx-auto mb-3">
+            <p class="text-xl font-semibold">Flask</p>
+          </div>
+
+          <!-- Google OAuth2 -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+              class="w-10 mx-auto mb-3" alt="Google OAuth2">
+            <p class="text-xl font-semibold">Google OAuth2</p>
+          </div>
+
+
+          <!-- HTML -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              class="w-10 mx-auto mb-3">
+            <p class="text-xl font-semibold">HTML5</p>
+          </div>
+
+          <!-- CSS -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              class="w-10 mx-auto mb-3">
+            <p class="text-xl font-semibold">CSS3</p>
+          </div>
+
+          <!-- Tailwind -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" class="w-10 mx-auto mb-3">
+            <p class="text-xl font-semibold">Tailwind CSS</p>
+          </div>
+
+          <!-- jQuery -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+              class="w-10 mx-auto mb-3">
+            <p class="text-xl font-semibold">jQuery</p>
+          </div>
+
+          <!-- PostgreSQL -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+              class="w-10 mx-auto mb-3">
+            <p class="text-xl font-semibold">PostgreSQL</p>
+          </div>
+
+          <!-- MySQL -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+              class="w-10 mx-auto mb-3">
+            <p class="text-xl font-semibold">MySQL</p>
+          </div>
+
+          <!-- MongoDB -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+              class="w-10 mx-auto mb-3">
+            <p class="text-xl font-semibold">MongoDB</p>
+          </div>
+
+          <!-- SQLite -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+              class="w-10 mx-auto mb-3">
+            <p class="text-xl font-semibold">SQLite</p>
+          </div>
+
+
+          <!-- GitHub -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              class="w-10 mx-auto mb-3 bg-white rounded-full">
+            <p class="text-xl font-semibold">GitHub</p>
+          </div>
+
+          <!-- VS Code -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+              class="w-10 mx-auto mb-3">
+            <p class="text-xl font-semibold">VS Code</p>
+          </div>
+
+          <!-- PyCharm -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg"
+              class="w-10 mx-auto mb-3">
+            <p class="text-xl font-semibold">PyCharm</p>
+          </div>
+
+          <!-- Figma -->
+          <div class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+              class="w-10 mx-auto mb-3">
+            <p class="text-xl font-semibold">Figma</p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= PROJECTS ================= -->
+      <section id="projects" class="relative py-20 text-white mt-10">
+
+        <p class="bg-transparent border border-white/30 inline-block px-4 py-1 rounded-full mb-6">
+          PROJECTS
+        </p>
+
+        <h2 class="text-[4rem] font-lato leading-tight mb-16">
+          My
+          <span class="bg-gradient-to-r from-violet-700 to-rose-500 bg-clip-text text-transparent">
+            Projects
+          </span>
+        </h2>
+        <!-- Scroll Container -->
+        <div id="projectContainer1"
+          class="flex gap-10 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar pr-24">
+
+          <!-- Project 1 -->
+          <div class="min-w-[65%] snap-start">
+            <div class="border border-white/20 rounded-3xl p-4">
+              <img src="./static/images/resume_analyser.png" class="rounded-2xl w-full h-[320px] object-cover">
+            </div>
+
+            <div class="flex items-center justify-between mt-4">
+              <h3 class="text-2xl">
+                <a href="https://resumeanalyzer-yvthrrawzv9awlna5wtfxi.streamlit.app/" target="_blank"
+                  class="hover:underline">
+                  AI-powered Resume Analyzer
+                </a>
+              </h3>
+
+              <button onclick="toggleBox('box1')"
+                class="text-sm px-3 py-1 border border-white/20 rounded-lg hover:bg-white/10 transition">
+                About
+              </button>
+            </div>
+
+            <div id="box1"
+              class="hidden mt-3 bg-white/5 border border-white/10 rounded-xl p-4 text-sm text-gray-300 transition-all duration-500">
+              This project analyzes resumes using AI techniques to evaluate skills, keywords and formatting.
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="min-w-[65%] snap-start">
+            <div class="border border-white/20 rounded-3xl p-4">
+              <img src="./static/images/scam.png" class="rounded-2xl w-full h-[320px] object-cover">
+            </div>
+
+            <div class="flex items-center justify-between mt-4">
+              <h3 class="text-2xl">
+                <a href="https://scam-detector-1-9mbt.onrender.com/" target="_blank" class="hover:underline">
+                  AI Scam Detector
+                </a>
+              </h3>
+
+              <button onclick="toggleBox('box2')"
+                class="text-sm px-3 py-1 border border-white/20 rounded-lg hover:bg-white/10 transition">
+                About
+              </button>
+            </div>
+
+            <div id="box2"
+              class="hidden mt-3 bg-white/5 border border-white/10 rounded-xl p-4 text-sm text-gray-300 transition-all duration-500">
+              Detects scam messages, links and suspicious content using pattern-based logic.
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="min-w-[65%] snap-start">
+            <div class="border border-white/20 rounded-3xl p-4">
+              <img src="./static/images/ux.png" class="rounded-2xl w-full h-[320px] object-cover">
+            </div>
+
+            <div class="flex items-center justify-between mt-4">
+              <h3 class="text-2xl">
+                <a href="https://ux-critic.streamlit.app/" target="_blank" class="hover:underline">
+                  AI Website UX Critic
+                </a>
+              </h3>
+
+              <button onclick="toggleBox('box3')"
+                class="text-sm px-3 py-1 border border-white/20 rounded-lg hover:bg-white/10 transition">
+                About
+              </button>
+            </div>
+
+            <div id="box3"
+              class="hidden mt-3 bg-white/5 border border-white/10 rounded-xl p-4 text-sm text-gray-300 transition-all duration-500">
+              Provides UX suggestions, page ideas and improvements for better user experience.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Buttons -->
+        <div class="absolute bottom-2 right-10 flex gap-4 z-20">
+
+          <!-- Back -->
+          <button onclick="scrollBack('projectContainer1')"
+            class="bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-md rounded-full p-4 transition">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M18.464 2.114a1 1 0 0 0-1.033.063l-13 9a1.003 1.003 0 0 0 0 1.645l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-.536-.886M17 19.091L6.757 12L17 4.909z" />
+            </svg>
+
+          </button>
+
+          <!-- Next -->
+          <button onclick="scrollNext('projectContainer1')"
+            class="bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-md rounded-full p-4 transition">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M5.536 21.886a1 1 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886M7 4.909L17.243 12L7 19.091z" />
+            </svg>
+
+          </button>
+
+        </div>
+
+      </section>
+
+
+
+
+
+
+      <!-- ================= WORKS ================= -->
+      <section id="works" class="relative py-20 text-white mt-10">
+
+        <p class="bg-transparent border border-white/30 inline-block px-4 py-1 rounded-full mb-6">
+          WORKS
+        </p>
+
+        <h2 class="text-[4rem] font-lato leading-tight mb-16">
+          My
+          <span class="bg-gradient-to-r from-violet-700 to-rose-500 bg-clip-text text-transparent">
+            Works
+          </span>
+        </h2>
+        <!-- Scroll Container -->
+        <div id="projectContainer2"
+          class="flex gap-10 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar">
+
+          <div class="min-w-[48%]">
+            <div class="border border-white/20 rounded-3xl p-4">
+              <img src="./static/images/spares.png" class="rounded-2xl w-full h-[320px] object-cover">
+            </div>
+            <h3 class="text-2xl mt-4">
+              <a href="https://sparescorporation.com" target="_blank" class="hover:underline">
+                Sparescorporation
+              </a>
+            </h3>
+          </div>
+
+          <div class="min-w-[48%]">
+            <div class="border border-white/20 rounded-3xl p-4">
+              <img src="./static/images/goldforum.png" class="rounded-2xl w-full h-[320px] object-cover">
+            </div>
+            <h3 class="text-2xl mt-4">
+              <a href="https://goldforum.in" target="_blank" class="hover:underline">
+                Gold Forum
+              </a>
+            </h3>
+          </div>
+
+          <div class="min-w-[48%]">
+            <div class="border border-white/20 rounded-3xl p-4">
+              <img src="./static/images/nme.png" class="rounded-2xl w-full h-[320px] object-cover">
+            </div>
+            <h3 class="text-2xl mt-4">
+              <a href="https://nmeapp.in" target="_blank" class="hover:underline">
+                Nme App
+              </a>
+            </h3>
+          </div>
+
+          <div class="min-w-[48%]">
+            <div class="border border-white/20 rounded-3xl p-4">
+              <img src="./static/images/eks.png" class="rounded-2xl w-full h-[320px] object-cover">
+            </div>
+            <h3 class="text-2xl mt-4">
+              <a href="https://eksfoods.com/" target="_blank" class="hover:underline">
+                EKS Foods
+              </a>
+            </h3>
+          </div>
+
+          <div class="min-w-[48%]">
+            <div class="border border-white/20 rounded-3xl p-4">
+              <img src="./static/images/cybexel.png" class="rounded-2xl w-full h-[320px] object-cover">
+            </div>
+            <h3 class="text-2xl mt-4">
+              <a href="https://cybexel.com" target="_blank" class="hover:underline">
+                Cybexel
+              </a>
+            </h3>
+          </div>
+
+          <div class="min-w-[48%]">
+            <div class="border border-white/20 rounded-3xl p-4">
+              <img src="./static/images/evs.png" class="rounded-2xl w-full h-[320px] object-cover">
+            </div>
+            <h3 class="text-2xl mt-4">
+              <a href="https://evslogistics.in" target="_blank" class="hover:underline">
+                EVS Logistics
+              </a>
+            </h3>
+          </div>
+
+        </div>
+
+        <!-- Buttons -->
+        <div class="absolute bottom-6 right-10 flex gap-4 mt-10">
+
+          <button onclick="scrollBack('projectContainer2')"
+            class="bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-md rounded-full p-4 transition">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M18.464 2.114a1 1 0 0 0-1.033.063l-13 9a1.003 1.003 0 0 0 0 1.645l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-.536-.886M17 19.091L6.757 12L17 4.909z" />
+            </svg>
+
+          </button>
+
+          <button onclick="scrollNext('projectContainer2')"
+            class="bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-md rounded-full p-4 transition">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M5.536 21.886a1 1 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886M7 4.909L17.243 12L7 19.091z" />
+            </svg>
+
+          </button>
+
+        </div>
+
+      </section>
+
+
+
+
+
+
+
+      <section id="education" class="mt-40">
+
+        <p class="bg-transparent border border-white/30 inline-block px-4 py-1 rounded-full mb-6">
+          EDUCATION
+        </p>
+
+        <h2 class="text-[4rem] font-lato leading-tight mb-16">
+          Academic
+          <span class="bg-gradient-to-r from-violet-700 to-rose-500 bg-clip-text text-transparent">
+            Background
+          </span>
+        </h2>
+
+        <div class="space-y-10 text-gray-300">
+
+          <div class="flex justify-between border-b border-white/20 pb-6">
+            <span>MCA – Artificial Intelligence</span>
+            <span>VIT University</span>
+            <span>2026 – Present</span>
+          </div>
+
+          <div class="flex justify-between border-b border-white/20 pb-6">
+            <span>Bachelor of Computer Applications</span>
+            <span>Saintgits College of Applied Sciences</span>
+            <span>Completed 2024</span>
+          </div>
+
+          <div class="flex justify-between border-b border-white/20 pb-6">
+            <span>Higher Secondary – Bio Maths</span>
+            <span>St. Anne’s G.H.S.S</span>
+            <span>Completed 2021</span>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="mt-40 mb-40">
+        <h2 class="text-[4rem] font-lato leading-tight mb-12">
+          Any questions? <br>
+          <span class="bg-gradient-to-r from-violet-700 to-rose-500 bg-clip-text text-transparent">
+            I'm all ears.
+          </span>
+        </h2>
+
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST"
+          class="bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-12 space-y-8">
+
+          <!-- Web3Forms Access Key -->
+          <input type="hidden" name="access_key" value="e96c3aa3-2f59-48e9-8971-2f9df8a43241">
+
+          <!-- Optional (better email subject) -->
+          <input type="hidden" name="subject" value="New Portfolio Contact Message">
+          <input type="hidden" name="from_name" value="Portfolio Contact Form">
+
+          <div>
+            <label class="text-gray-400 text-sm">YOUR NAME</label>
+            <input type="text" name="name" placeholder="Enter your name" required
+              class="w-full mt-2 p-4 bg-transparent border border-white/20 rounded-xl outline-none">
+          </div>
+
+          <div>
+            <label class="text-gray-400 text-sm">EMAIL</label>
+            <input type="email" name="email" placeholder="Your Email" required
+              class="w-full mt-2 p-4 bg-transparent border border-white/20 rounded-xl outline-none">
+          </div>
+
+          <div>
+            <label class="text-gray-400 text-sm">MESSAGE</label>
+            <textarea name="message" placeholder="Your Message" required
+              class="w-full mt-2 p-4 h-40 bg-transparent border border-white/20 rounded-xl outline-none"></textarea>
+          </div>
+
+          <button type="submit" class="bg-gradient-to-r from-violet-700 to-rose-500 px-8 py-3 rounded-full">
+            Submit
+          </button>
+
+        </form>
+
+
+
+        <div id="successModal" class="fixed inset-0 hidden items-center justify-center z-50">
+
+          <!-- Overlay -->
+          <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+
+          <!-- Modal Box -->
+          <div class="relative bg-white/5 border border-white/20 backdrop-blur-xl 
+              rounded-2xl p-10 text-center w-[90%] max-w-md 
+              shadow-2xl animate-fadeIn">
+
+            <h3 class="text-2xl font-semibold mb-4">
+              Message Sent!
+            </h3>
+
+            <p class="text-gray-300 mb-6">
+              Your message has been sent successfully. I’ll get back to you soon.
+            </p>
+
+            <button onclick="closeModal()" class="bg-gradient-to-r from-violet-700 to-rose-500 px-6 py-2 rounded-full">
+              Close
+            </button>
+
+          </div>
+        </div>
+      </section>
+
+
+      <footer class="mt-40 pt-16 border-t border-white/20">
+
+        <!-- Top Section -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-10">
+
+          <!-- Left -->
+          <div>
+            <h3 class="text-2xl font-semibold">
+              Darsana Rajesh
+            </h3>
+            <p class="text-gray-400 mt-2 max-w-md">
+              Python Full-Stack Developer building scalable web apps, APIs and modern digital experiences.
+            </p>
+          </div>
+
+          <!-- Right Links -->
+          <div class="flex gap-6 text-gray-300 text-sm">
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#projects" class="hover:text-white transition">Projects</a>
+            <a href="#skills" class="hover:text-white transition">Skills</a>
+            <a href="#contact" class="hover:text-white transition">Contact</a>
+          </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="my-10 border-t border-white/10"></div>
+
+        <!-- Bottom Section -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+
+
+        </div>
+
+        <!-- Copyright -->
+        <p class="text-gray-500 text-sm">
+          © 2026 Darsana Rajesh. All rights reserved.
+        </p>
+
+    </div>
+
+    </footer>
+  </div>
+
+
+  <!-- RIGHT MENU -->
+  <div class="fixed right-6 top-1/2 -translate-y-1/2 bg-black/60 backdrop-blur-lg p-4 rounded-2xl flex flex-col gap-6">
+
+    <a href="#home" class="nav-link active">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="#fff"
+            d="M19 21H5a1 1 0 0 1-1-1v-9H1l10.327-9.388a1 1 0 0 1 1.346 0L23 11h-3v9a1 1 0 0 1-1 1M6 19h12V9.157l-6-5.454l-6 5.454zm2-4h8v2H8z"
+            stroke-width="0.5" stroke="#fff" />
+        </svg>
+      </div>
+    </a>
+
+    <a href="#about" class="nav-link">
+      <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="#fff" d="M4 6h12V4.5H4zm16 4.5H4V9h16zM4 15h16v-1.5H4zm0 4.5h16V18H4z" stroke-width="0.5"
+            stroke="#fff" />
+        </svg></div>
+    </a>
+
+    <a href="#experience" class="nav-link">
+      <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="#fff"
+            d="M19 6h-3V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v1H5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3m-9-1h4v1h-4Zm10 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-5.61L8.68 14A1.2 1.2 0 0 0 9 14h6a1.2 1.2 0 0 0 .32-.05L20 12.39Zm0-7.72L14.84 12H9.16L4 10.28V9a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"
+            stroke-width="0.5" stroke="#fff" />
+        </svg></div>
+    </a>
+
+    <a href="#skills" class="nav-link">
+      <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="#fff"
+            d="m8 18l-6-6l6-6l1.425 1.425l-4.6 4.6L9.4 16.6zm8 0l-1.425-1.425l4.6-4.6L14.6 7.4L16 6l6 6z"
+            stroke-width="0.5" stroke="#fff" />
+        </svg></div>
+    </a>
+
+    <a href="#projects" class="nav-link">
+      <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+          <path fill="#fff" fill-rule="evenodd"
+            d="m85.333 160.617l128-74l.043.025L256 62l-42.667-24.666L42.667 136v197.333L85.333 358zm87.581 23.701l104.419-60.367l104.43 60.373l-104.419 60.368zm-23.581 35.651V346.05L256 407.716v-126.08zm256 126.081l-106.667 61.666V281.649l106.667-61.667zm-128-271.383L448 173.333v197.334l-170.667 98.667l-170.666-98.667V173.333z"
+            clip-rule="evenodd" stroke-width="13" stroke="#fff" />
+        </svg></div>
+
+    </a>
+
+    <a href="#works" class="nav-link">
+      <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+          <path fill="#fff" fill-rule="evenodd"
+            d="M469.334 85.333v341.333H42.667V85.333zM192 192H85.334v192H192zm234.667 0h-192v192h192zm0-64H85.334v21.333h341.333z"
+            stroke-width="13" stroke="#fff" />
+        </svg></div>
+    </a>
+
+    <a href="#education" class="nav-link">
+      <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+          <path fill="#fff"
+            d="m249.8 85.49l-116-64a12 12 0 0 0-11.6 0l-116 64a12 12 0 0 0 0 21l21.8 12v47.76a19.9 19.9 0 0 0 5.09 13.32C46.63 194.7 77 220 128 220a136.9 136.9 0 0 0 40-5.75V240a12 12 0 0 0 24 0v-35.88a119.5 119.5 0 0 0 30.91-24.51a19.9 19.9 0 0 0 5.09-13.32v-47.76l21.8-12a12 12 0 0 0 0-21ZM128 45.71L219.16 96L186 114.3a2 2 0 0 1-.18-.12l-52-28.69a12 12 0 0 0-11.6 21l39 21.49L128 146.3L36.84 96ZM128 196c-40.42 0-64.65-19.07-76-31.27v-33l70.2 38.74a12 12 0 0 0 11.6 0l34.2-18.83v37.23a110.5 110.5 0 0 1-40 7.13m76-31.27a93 93 0 0 1-12 10.81v-37.15l12-6.62Z"
+            stroke-width="6.5" stroke="#fff" />
+        </svg></div>
+    </a>
+
+    <a href="#contact" class="nav-link">
+      <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="currentColor"
+            d="M6 17c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6m9-9a3 3 0 0 1-3 3a3 3 0 0 1-3-3a3 3 0 0 1 3-3a3 3 0 0 1 3 3M3 5v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2" />
+        </svg></div>
+    </a>
+
+  </div>
+
+  </div>
+
+
+</body>
+<script src="./static/js/script.js"></script>
+
+</html>
